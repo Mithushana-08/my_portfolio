@@ -524,7 +524,7 @@
     </section>
 
     <!-- Competitions & Achievements Section -->
-    <section id="achievements" class="py-16 bg-gray-900">
+    <section id="achievements" class="py-16 bg-gray-800">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-semibold section-title mb-10">Competitions & Achievements</h2>
             
@@ -565,8 +565,15 @@
     <section id="contact" class="py-16 bg-gray-900">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-semibold section-title mb-10">Contact Me</h2>
-            <p class="text-gray-400 mb-4">Get in touch at: <a href="mailto:sshanakumar08@gmail.com" class="accent-color">sshanakumar08@gmail.com</a></p>
-            <p class="text-gray-400 mb-6">Phone: +94 761 960 855</p>
+           
+            <form class="w-full max-w-3xl mx-auto mb-8 bg-gray-800 p-8 rounded-lg shadow-lg card-hover flex flex-col gap-6" name="contact" autocomplete="off" method="POST" action="https://formspree.io/f/xvgrkdlv">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <input type="text" id="name" name="name" required pattern="^[A-Za-z\s]{2,50}$" minlength="2" maxlength="50" class="flex-1 p-3 rounded bg-gray-900 border border-gray-700 focus:border-[#6F5479] focus:outline-none text-white placeholder-gray-400" placeholder="Name*">
+                    <input type="email" id="email" name="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" class="flex-1 p-3 rounded bg-gray-900 border border-gray-700 focus:border-[#6F5479] focus:outline-none text-white placeholder-gray-400" placeholder="Email*">
+                </div>
+                <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000" class="p-3 rounded bg-gray-900 border border-gray-700 focus:border-[#6F5479] focus:outline-none text-white placeholder-gray-400" placeholder="Message*"></textarea>
+                <button type="submit" class="button w-full mt-2">Send</button>
+            </form>
             <div class="flex justify-center space-x-4">
                 <a href="https://linkedin.com/in/mithushana" class="text-gray-400 social-icon hover:text-purple-500" target="_blank">LinkedIn</a>
                 <a href="https://github.com/mithushana-08" class="text-gray-400 social-icon hover:text-purple-500" target="_blank">GitHub</a>
